@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+	<title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="main">
+			<div class="balance_area">
+				<div class="balance_text">
+					<p class="balance_title">My balance</p>
+					<p class="balance_amount">$921.48</p>
+				</div>
+				<div class="balance_rings">
+					<div class="ring1"></div>
+					<div class="ring2"></div>
+				</div>
+			</div>
+			<section class="chart_area">
+				<h1 class="chart_title">Spending - Last 7 days</h1>
+				<div class="chart_container">
+					<ul class="chart">
+						<li><div id="mon" data-amount="" class="bar"></div><span>mon</span></li>
+						<li><div id="tue" data-amount="" class="bar"></div><span>tue</span></li>
+						<li><div id="wed" data-amount="" class="bar"></div><span>wed</span></li>
+						<li><div id="thu" data-amount="" class="bar"></div><span>thu</span></li>
+						<li><div id="fri" data-amount="" class="bar"></div><span>fri</span></li>
+						<li><div id="sat" data-amount="" class="bar"></div><span>sat</span></li>
+						<li><div id="sun" data-amount="" class="bar"></div><span>sun</span></li>
+					</ul>
+				</div>
+				<div class="chart_info">
+					<div class="thisMonth">
+						<p class="thisMonth_txt">Total this month</p>
+						<p class="thisMonth_num">$478.33</p>
+					</div>
+					<div class="lastMonth">
+						<p class="lastMonth_rate">+2.4%</p>
+						<p class="lastMonth_txt">from last month</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/patrickbatungbacal">Patrick</a>.
+		</div>
+	</div>
+</body>
+</html>

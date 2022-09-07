@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+    max-width: 433px;
+    margin: 110px auto;
+}
+
+.balance_area {
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 25px 19px 25px;
+    border-radius: 18px;
+}
+
+.balance_title {
+    font-size: 13px;
+    color: #FFF;
+    letter-spacing: 1px;;
+}
+
+.balance_amount {
+    margin-top: 9px;
+    font-size: 25px;
+    color: #FFF;
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+
+.balance_rings {
+    padding-top: 6px;
+    display: flex;
+    position: relative;
+}
+
+.ring1 {
+    border: 2px solid #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: relative;
+    right: -13px;
+    top: 3px;
+    z-index: 1;
+}
+
+.ring2 {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: hsl(25, 47%, 15%);
+    position: relative;
+    right: 7px;
+    top: 3px;
+}
+
+
+.attribution {
+    width: 55ex;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.chart_area {
+    margin-top: 19.5px;
+    padding: 27px 33px;
+    border-radius: 18px;
+    background-color: hsl(33, 100%, 98%);
+}
+
+.chart_title {
+    font-size: 23px;
+    letter-spacing: 1.35px;
+}
+
+.chart_container {
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    height: 224px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 24px;
+}
+
+.chart {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.chart li {
+    width: calc((100% - 80px)/7);
+    text-align: center;
+}
+
+.chart li span {
+    color: rgb(128, 114, 114)
+}
+
+.bar {
+    height: 0;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    transition: 1s ease-out height;
+    position: relative;
+}
+
+.bar:hover {
+    background-color: hsl(10, 63%, 71%);
+}
+
+[data-amount]:hover::before {
+    content: attr(data-amount);
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    background-color: rgb(82, 70, 70);
+    border-radius: 5px;
+    font-size: 12px;
+    padding-top: 5px;
+    height: 25px;
+    letter-spacing: .6px;
+    width: 50px;
+    top: -35px;
+    left: -4px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topDay {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.topDay:hover {
+    background-color: hsl(187, 50%, 79%);
+}
+
+.chart li span {
+    font-size: 12px;
+}
+
+.chart_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0 8px;
+}
+
+.thisMonth_txt {
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+    letter-spacing: .25px;;
+}
+
+.thisMonth_num {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.lastMonth {
+    text-align: right;
+    padding-top: 24px;
+}
+
+.lastMonth_rate {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lastMonth_txt {
+    color: hsl(28, 10%, 53%);
+    font-size: 14.5px;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .wrap {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
