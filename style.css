@@ -141,11 +141,11 @@ body {
 }
 
 .topDay {
-    background-color: hsl(123, 97%, 37%);
+    background-color: hsl(283, 97%, 37%);
 }
 
 .topDay:hover {
-    background-color: hsl(66, 100%, 72%);
+    background-color: hsl(165, 85%, 46%);
 }
 
 .chart li span {
